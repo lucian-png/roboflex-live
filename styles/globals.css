@@ -1,0 +1,18 @@
+/* Global Styles applied site-wide */
+body {
+  background-color: #000; /* Full black background */
+  color: white; /* Default text color white */
+  margin: 0; /* Remove default body margin */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Luxury clean font */
+  scroll-behavior: smooth; /* Smooth scrolling for anchor jump */
+}
+
+/* Optional: remove underlines unless hover */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,107 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #000; /* Ensure full black behind PNG */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+/* Hero Background PNG positioned behind, keeps alpha transparency */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('/hero-bg.png') center/contain no-repeat;
+  background-color: transparent;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Dark overlay for contrast */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity for desired contrast */
+  z-index: 1;
+}
+
+.hero h1,
+.hero h2,
+.hero button {
+  position: relative; /* Ensures they sit above the overlay */
+  z-index: 2;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.95); /* ensure black section background */
+}
+
+.section h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+/* Form Styles */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form button {
+  width: 100%;
+  background: #003366;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #0055aa;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  background: #000;
+  color: #777;
+}
