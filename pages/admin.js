@@ -53,25 +53,31 @@ export default function AdminPage() {
     }
   };
 
-  const downloadCSV = () => {
-    const header = ['Name', 'Email', 'Message', 'Submitted At'];
-    const rows = submissions.map((row) => [
-      row.name,
-      row.email,
-      row.message || '',
-      row.submitted_at
-    ]);
-    const csvContent = [header, ...rows]
-      .map((e) => e.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(','))
-      .join('\n');
+ const downloadCSV = async () => {
+  try {
+    const res = await fetch('/api/admin-export-csv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password })
+    });
 
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    if (!res.ok) {
+      throw new Error('Failed to download CSV');
+    }
+
+    const blob = await res.blob();
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.setAttribute('href', url);
+    link.href = url;
     link.setAttribute('download', 'applications.csv');
+    document.body.appendChild(link);
     link.click();
-  };
+    document.body.removeChild(link);
+  } catch (err) {
+    alert('Error downloading CSV');
+    console.error(err);
+  }
+};
 
   if (!authed) {
     return (
