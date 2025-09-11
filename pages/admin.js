@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 export default function AdminPage() {
  const [password, setPassword] = useState('');
  const [submissions, setSubmissions] = useState([]);
