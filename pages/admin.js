@@ -54,6 +54,9 @@ export default function AdminPage() {
  <th style={th}>Email</th>
  <th style={th}>Message</th>
  <th style={th}>Submitted At</th>
+ <th style={th} onClick={() => handleSort('name')}>Name</th>
+ <th style={th} onClick={() => handleSort('email')}>Email</th>
+ <th style={th} onClick={() => handleSort('submitted_at')}>Submitted At</th>
  </tr>
  </thead>
  <tbody>
@@ -83,4 +86,20 @@ const th = {
 const td = {
  borderBottom: '1px solid #333',
  padding: '8px',
+};
+
+const [sortConfig, setSortConfig] = useState({ key: 'submitted_at', direction: 'desc' });
+
+const sortedSubmissions = [...submissions].sort((a, b) => {
+  if (a[sortConfig.key] < b[sortConfig.key]) return sortConfig.direction === 'asc' ? -1 : 1;
+  if (a[sortConfig.key] > b[sortConfig.key]) return sortConfig.direction === 'asc' ? 1 : -1;
+  return 0;
+});
+
+const handleSort = (key) => {
+  let direction = 'asc';
+  if (sortConfig.key === key && sortConfig.direction === 'asc') {
+    direction = 'desc';
+  }
+  setSortConfig({ key, direction });
 };
