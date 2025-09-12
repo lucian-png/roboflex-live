@@ -32,7 +32,7 @@ export default function Home() {
       <section className={styles.section}>
         <h3>Engineered in Secrecy</h3>
         <p>
-          For 25 years, this technology was classified and held by the U.S. military. Originally engineered to harden astronauts for deep space missions and fighter pilots for 10G maneuvers, Roboflex is now available for private ownership for the first time.
+          For 25 years, this technology was classified and held by the U.S. military. Originally engineered to harden astronauts for deep space missions and fighter pilots for 10G maneuvers, after 9/11 the technology was obtained by the military for their "Iron Man" project. When that project recently ended, the tech was returned to the inventor. Roboflex is now available for private ownership for the first time.
         </p>
       </section>
 
