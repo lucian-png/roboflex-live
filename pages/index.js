@@ -32,7 +32,7 @@ export default function Home() {
       <section className={styles.section}>
         <h3>Engineered in Secrecy</h3>
         <p>
-          For 25 years, this technology was classified by the U.S. military. Originally engineered to harden astronauts for deep space missions and fighter pilots for 10G maneuvers, the technology was obtained by the military after 9/11 to be part of their "Iron Man" project. When that project recently ended, the original tech and the portfolio of advanced, formerly secret IP was returned to the inventor. After decades of military service, Roboflex is now available for private ownership to an extremely limited and discerning clientele. Roboflex is not about fitness. It's about life power mastery, performance longevity, and career extension, as well as skill enhancement, mental clarity, and psychological focus. The youthful vigor and healthy body are just icing on the cake.
+          For 25 years, this technology was classified by the U.S. military. Originally engineered to harden astronauts for deep space missions and fighter pilots for 10G maneuvers, the technology was obtained by the military after 9/11 to be part of their "Iron Man" project. When that project recently ended, the original tech and the portfolio of advanced, formerly secret IP was returned to the inventor. After decades of military service, Roboflex is now available for private ownership to an extremely limited and discerning clientele. Roboflex is not about fitness. It's about life power mastery, performance longevity, and career extension, as well as skill enhancement, mental clarity, and psychological dominance. The youthful vigor and healthy body are just icing on the cake.
         </p>
       </section>
 
