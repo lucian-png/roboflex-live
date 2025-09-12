@@ -40,7 +40,7 @@ export default function Home() {
       <section className={styles.section}>
         <h3>Scarcity</h3>
         <p>
-          <strong>Unit # 1 of 10 Now Available - Only 10 Limited Edition Original NASA‑Spec Units In The World</strong>
+          <strong>Unit #1 of 10 Now Available - Only 10 Limited Edition Original NASA‑Spec Units In The World</strong>
           <br />
           Recovered from a military warehouse, each NASA OG unit is hand-built and precision-crafted to aerospace tolerances. These special units are pieces of history as much as they are collectible art. All 10 units are still in pristine condition and are being updated with current computers, sensors, luxury styling, and a healthy dose of formerly secret technology. No future units will match this original specification. This is a once in a lifetime opportunity to own a piece of technological history more rare than a Bugatti, more elite than a Gulfstream, and actually harder to obtain than many hard assets. It fits nicely on a yacht, too. If you appreciate fine engineering, incredible manufacturing, and performance beyond what is available anywhere at any price, Roboflex is for you.
         </p>
