@@ -8,14 +8,14 @@ export default function Home() {
         <title>Roboflex — Ultra‑Luxury Performance System</title>
         <meta
           name="description"
-          content="From black project to private ownership — the Roboflex exoskeletal performance system."
+          content="From military black project to private ownership — the Roboflex exoskeletal performance system."
         />
       </Head>
 
       {/* Hero Section */}
       <div className={styles.hero}>
         <h1>ROBOFLEX</h1>
-        <h2>From Black Project to Private Ownership</h2>
+        <h2>From Military Black Project to Private Ownership</h2>
         <button
           onClick={() => {
             const formSection = document.getElementById('apply');
