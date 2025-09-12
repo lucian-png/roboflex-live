@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Application Form */}
       <section id="apply" className={styles.section}>
-        <h3>Apply for Consideration</h3>
+        <h3>Apply for Ownership Consideration. Inquire About Limited Investment Opportunity – Available for Short Time Only.</h3>
         <form
           className={styles.form}
           onSubmit={async (e) => {
