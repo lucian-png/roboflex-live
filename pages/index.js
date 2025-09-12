@@ -8,7 +8,7 @@ export default function Home() {
         <title>Roboflex — Ultra‑Luxury Performance System</title>
         <meta
           name="description"
-          content="From NASA black project to private ownership — the Roboflex exoskeletal performance system."
+          content="From black project to private ownership — the Roboflex exoskeletal performance system."
         />
       </Head>
 
