@@ -42,7 +42,7 @@ export default function Home() {
         <p>
           <strong>Unit # 1 of 10 Now Available - Only 10 Limited Edition Original NASA‑Spec Units In The World</strong>
           <br />
-          Recovered from a military warehouse, each NASA OG unit was hand-built and precision-crafted to aerospace tolerances. These special units are pieces of history as much as they are collectible art. All 10 units are still in pristine condition and are being updated with current computers, sensors, luxury styling, and a healthy dose of formerly secret technology. No future units will match this original specification. This is a once in a lifetime opportunity to own a piece of technological history more rare than a Bugatti, as beautiful as a Ferrari, and as useful for the development and expansion of personal power as a private jet. It fits nicely on a yacht, too.
+          Recovered from a military warehouse, each NASA OG unit was hand-built and precision-crafted to aerospace tolerances. These special units are pieces of history as much as they are collectible art. All 10 units are still in pristine condition and are being updated with current computers, sensors, luxury styling, and a healthy dose of formerly secret technology. No future units will match this original specification. This is a once in a lifetime opportunity to own a piece of technological history more rare than a Bugatti, as beautiful as a Ferrari, more elite than a Gulfstream, and actually harder to obtain than many hard assets. It fits nicely on a yacht, too.
         </p>
       </section>
 
