@@ -15,7 +15,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className={styles.hero}>
         <h1>ROBOFLEX</h1>
-        <h2>From NASA Black Project to Private Ownership</h2>
+        <h2>From Black Project to Private Ownership</h2>
         <button
           onClick={() => {
             const formSection = document.getElementById('apply');
