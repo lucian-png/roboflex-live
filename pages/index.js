@@ -40,9 +40,9 @@ export default function Home() {
       <section className={styles.section}>
         <h3>Scarcity</h3>
         <p>
-          <strong>Limited to 10 Original NASA‑Spec Units</strong>
+          <strong>Now Available - 10 Limited Edition Original NASA‑Spec Units</strong>
           <br />
-          Each unit is hand-built from aerospace alloys and precision-crafted to military tolerances. No future units will match this specification.
+          Recovered from a military warehouse, each NASA OG unit was hand-built and precision-crafted to aerospace tolerances. These special units are pieces of history as much as they are collectible art. All 10 units are still in pristine condition and are being updated with current computers, sensors, and luxury styling. No future units will match this original specification. This is a once in a lifetime opportunity to own a piece of technological history more rare and beautiful as a Ferrari, and as useful for the development of personal power as a private jet. It fits nicely on a yacht, too.
         </p>
       </section>
 
