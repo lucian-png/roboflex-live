@@ -99,17 +99,4 @@ export default function Home() {
       </footer>
     </>
   );
-
-import SEO from '../components/SEO';
-
-export default function LandingPage() {
-  return (
-    <>
-      <SEO pageKey="landing" />
-      <main>
-        <h1>Landing Page Placeholder</h1>
-        <p>This is the interim or Phase 1 landing page.</p>
-      </main>
-    </>
-  );
 }
