@@ -8,7 +8,7 @@ const defaultSEO = {
 
 // Global verification/meta codes
 const verification = {
-  google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Replace with actual
+  google: '<meta name="google-site-verification" content="6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME" />', // Replace with actual
   bing: '',
   yandex: ''
 };
