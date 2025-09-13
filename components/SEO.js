@@ -16,6 +16,39 @@ export default function SEO({
   const seoUrl = url || defaultSEO.siteUrl;
   const seoImage = image || pageConfig.image || defaultSEO.defaultImage;
 
+  // Structured data (JSON-LD)
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Roboflex',
+    url: seoUrl,
+    logo: `${seoUrl}/logo.png`, // Add logo.png to /public
+    sameAs: [
+      'https://www.linkedin.com/company/roboflex', // Update when available
+      'https://twitter.com/roboflex_official'       // Update when available
+    ]
+  };
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Roboflex Human Performance System',
+    image: `${seoUrl}${seoImage}`,
+    description: seoDescription,
+    brand: {
+      '@type': 'Brand',
+      name: 'Roboflex'
+    },
+    offers: {
+      '@type': 'Offer',
+      url: seoUrl,
+      priceCurrency: 'USD',
+      // No public pricing — omit "price" to keep UHNWI exclusivity
+      availability: 'https://schema.org/PreOrder', 
+      itemCondition: 'https://schema.org/NewCondition'
+    }
+  };
+
   return (
     <Head>
       {/* Primary Meta Tags */}
@@ -53,6 +86,20 @@ export default function SEO({
       {verification.yandex && (
         <meta name="yandex-verification" content={verification.yandex} />
       )}
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productSchema)
+        }}
+      />
     </Head>
   );
 }

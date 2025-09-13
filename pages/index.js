@@ -1,16 +1,10 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import SEO from '../components/SEO'; // ✅ New import
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Roboflex — Ultra‑Luxury Performance System</title>
-        <meta
-          name="description"
-          content="From military black project to private ownership — the Roboflex exoskeletal performance system."
-        />
-      </Head>
+      <SEO pageKey="landing" /> {/* ✅ SEO helper replaces your inline <Head> */}
 
       {/* Hero Section */}
       <div className={styles.hero}>

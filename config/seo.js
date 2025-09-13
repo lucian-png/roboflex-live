@@ -1,105 +1,43 @@
-import Head from 'next/head';
-import { defaultSEO, seoPages, verification } from '../config/seo';
+const defaultSEO = {
+  defaultTitle: 'Roboflex — Ultra‑Luxury Human Performance Engineering',
+  defaultDescription:
+    'From NASA-class engineering to private ownership. Discover the world’s most exclusive human performance system.',
+  siteUrl: 'https://roboflex.co',
+  defaultImage: '/og-image.jpg'
+};
 
-export default function SEO({
-  pageKey,
-  title,
-  description,
-  url,
-  image
-}) {
-  const pageConfig = pageKey ? seoPages[pageKey] || {} : {};
+// Global verification/meta codes
+const verification = {
+  google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Replace with actual
+  bing: '',
+  yandex: ''
+};
 
-  const seoTitle = title || pageConfig.title || defaultSEO.defaultTitle;
-  const seoDescription =
-    description || pageConfig.description || defaultSEO.defaultDescription;
-  const seoUrl = url || defaultSEO.siteUrl;
-  const seoImage = image || pageConfig.image || defaultSEO.defaultImage;
+const seoPages = {
+  landing: {
+    title: 'Roboflex — 1 of 10 Original NASA‑Spec Units Available',
+    description:
+      'Own a piece of technological history: one of only 10 hand-built, original NASA-spec Roboflex units — precision aerospace engineering for elite performance.',
+    image: '/og-image.jpg'
+  },
+  application: {
+    title: 'Apply for Private Access — Roboflex',
+    description:
+      'Submit your application to gain exclusive access to the Roboflex performance platform.',
+    image: '/og-image.jpg'
+  },
+  technology: {
+    title: 'Technology — Roboflex',
+    description:
+      'Explore the groundbreaking engineering behind the Roboflex biolocomotion system.',
+    image: '/og-image-tech.jpg'
+  },
+  heritage: {
+    title: 'Heritage — Roboflex',
+    description:
+      'Discover the NASA and military heritage that shaped the Roboflex platform.',
+    image: '/og-image-heritage.jpg'
+  }
+};
 
-  // Structured data (JSON-LD)
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Roboflex',
-    url: seoUrl,
-    logo: `${seoUrl}/logo.png`, // Add logo.png to /public
-    sameAs: [
-      'https://www.linkedin.com/company/roboflex', // Update when available
-      'https://twitter.com/roboflex_official'       // Update when available
-    ]
-  };
-
-  const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'Roboflex Human Performance System',
-    image: `${seoUrl}${seoImage}`,
-    description: seoDescription,
-    brand: {
-      '@type': 'Brand',
-      name: 'Roboflex'
-    },
-    offers: {
-      '@type': 'Offer',
-      url: seoUrl,
-      priceCurrency: 'USD',
-      // No public pricing — omit "price" to keep UHNWI exclusivity
-      availability: 'https://schema.org/PreOrder', 
-      itemCondition: 'https://schema.org/NewCondition'
-    }
-  };
-
-  return (
-    <Head>
-      {/* Primary Meta Tags */}
-      <title>{seoTitle}</title>
-      <meta name="title" content={seoTitle} />
-      <meta name="description" content={seoDescription} />
-
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={seoUrl} />
-      <meta property="og:title" content={seoTitle} />
-      <meta property="og:description" content={seoDescription} />
-      <meta property="og:image" content={seoImage} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={seoUrl} />
-      <meta name="twitter:title" content={seoTitle} />
-      <meta name="twitter:description" content={seoDescription} />
-      <meta name="twitter:image" content={seoImage} />
-
-      {/* Mobile */}
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-      {/* Verification Meta Tags */}
-      {verification.google && (
-        <meta
-          name="google-site-verification"
-          content={verification.google}
-        />
-      )}
-      {verification.bing && (
-        <meta name="msvalidate.01" content={verification.bing} />
-      )}
-      {verification.yandex && (
-        <meta name="yandex-verification" content={verification.yandex} />
-      )}
-
-      {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema)
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productSchema)
-        }}
-      />
-    </Head>
-  );
-}
+export { defaultSEO, seoPages, verification };
