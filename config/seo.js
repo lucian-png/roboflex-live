@@ -8,7 +8,7 @@ const defaultSEO = {
 
 // Global verification/meta codes
 const verification = {
-  google: '6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME', // Replace with actual
+  google: '6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME',
   bing: '',
   yandex: ''
 };
@@ -37,6 +37,12 @@ const seoPages = {
     description:
       'Discover the NASA and military heritage that shaped the Roboflex platform.',
     image: '/og-image-heritage.jpg'
+  },
+  technologyPrinciples: {
+    title: 'Roboflex Technology Principles — Biolocomotion Performance',
+    description:
+      'Explore the core engineering principles behind Roboflex — a NASA‑heritage, biolocomotion performance system for elite physical mastery.',
+    image: '/og-image-tech.jpg'
   }
 };
 
