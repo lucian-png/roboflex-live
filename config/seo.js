@@ -9,8 +9,13 @@ const defaultSEO = {
   defaultImage: '/og-image.jpg'
 };
 
-// Optional: Page-specific overrides
-// You can add/modify entries as the site grows (Phase 1 and beyond)
+// Global verification/meta codes
+const verification = {
+  google: '<meta name="google-site-verification" content="6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME" />', // paste from Search Console
+  bing: '',   // optional
+  yandex: ''  // optional
+};
+
 const seoPages = {
   landing: {
     title: 'Roboflex — Elite Biolocomotion Performance System',
@@ -28,7 +33,7 @@ const seoPages = {
     title: 'Technology — Roboflex',
     description:
       'Explore the groundbreaking engineering behind the Roboflex biolocomotion system.',
-    image: '/og-image-tech.jpg' // You can swap out per page
+    image: '/og-image-tech.jpg'
   },
   heritage: {
     title: 'Heritage — Roboflex',
@@ -38,4 +43,4 @@ const seoPages = {
   }
 };
 
-export { defaultSEO, seoPages };
+export { defaultSEO, seoPages, verification };

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { defaultSEO, seoPages } from '../config/seo';
+import { defaultSEO, seoPages, verification } from '../config/seo';
 
 export default function SEO({
   pageKey,
@@ -8,7 +8,6 @@ export default function SEO({
   url,
   image
 }) {
-  // Pull page-specific config if available
   const pageConfig = pageKey ? seoPages[pageKey] || {} : {};
 
   const seoTitle = title || pageConfig.title || defaultSEO.defaultTitle;
@@ -40,6 +39,20 @@ export default function SEO({
 
       {/* Mobile */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      {/* Verification Meta Tags */}
+      {verification.google && (
+        <meta
+          name="google-site-verification"
+          content={verification.google}
+        />
+      )}
+      {verification.bing && (
+        <meta name="msvalidate.01" content={verification.bing} />
+      )}
+      {verification.yandex && (
+        <meta name="yandex-verification" content={verification.yandex} />
+      )}
     </Head>
   );
 }
