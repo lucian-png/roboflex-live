@@ -32,7 +32,7 @@ export default function Home() {
       <section className={styles.section}>
         <h3>Engineered in Secrecy</h3>
         <p>
-          For 25 years, this technology was classified by the U.S. military. Originally engineered to harden astronauts for deep space missions and fighter pilots for 10G maneuvers, the technology was obtained by the military after 9/11 to be part of their "Iron Man" project. When that project recently ended, the original tech and the portfolio of advanced, formerly secret IP were returned to the inventor. After decades of military service, Roboflex is now available for private ownership to an extremely limited and discerning clientele. Roboflex is not about fitness. It's about life power mastery, performance longevity, and career extension. It optimizes skill enhancement, mental clarity, and psychological dominance. The youthful vigor and healthy body are just icing on the cake.
+          For 25 years, this technology was classified by the U.S. military. Originally engineered to harden astronauts for deep space missions and fighter pilots for 10G maneuvers, the technology IP was seized by the military after 9/11 as part of their "Iron Man" project. When that project recently ended, the original tech and the portfolio of advanced, formerly secret IP were returned to the inventor. After decades of military service, Roboflex is now available for private ownership to an extremely limited and discerning clientele. Roboflex is not about fitness. It's about life power mastery, performance longevity, and career extension. It optimizes physical skill, mental clarity, and psychological dominance. The youthful vigor and healthy body are just icing on the cake.
         </p>
       </section>
 
@@ -42,7 +42,7 @@ export default function Home() {
         <p>
           <strong>Unit #1 of 10 Now Available - Only 10 Limited Edition Original NASA‑Spec Units In The World</strong>
           <br />
-          Recovered from a military warehouse, each NASA OG unit is hand-built and precision-crafted to aerospace tolerances. These special units are pieces of history as much as they are collectible art. All 10 units are still in pristine condition and are being updated with current computers, sensors, luxury styling, and a healthy dose of formerly secret technology. No future units will match this original specification. This is a once in a lifetime opportunity to own a piece of technological history more rare than a Bugatti, more elite than a Gulfstream, and actually harder to obtain than many hard assets. It fits nicely on a yacht, too. If you appreciate fine engineering, incredible manufacturing, and performance beyond what is available anywhere at any price, Roboflex is for you.
+          Recovered from a military warehouse, brand new and still in crates, each NASA OG unit is hand-built, precision-crafted to aerospace tolerances, and has a 100-year functional lifespan. All 10 units are pristine and are being updated with current computers, sensors, luxury styling, and a healthy dose of formerly secret technology. No future units will match this original specification. This is a once in a lifetime opportunity to own a piece of technological history/functional artwork that's more rare than a Bugatti, more elite than a Gulfstream, and actually harder to obtain than many hard assets. It fits nicely on a yacht, too. If you appreciate fine engineering, incredible performance, and the exclusivity of owning 1 out of only 10 on the planet, Roboflex is for you.
         </p>
       </section>
 
