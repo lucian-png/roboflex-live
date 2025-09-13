@@ -1,24 +1,24 @@
 const defaultSEO = {
-  defaultTitle: 'Roboflex — Ultra‑Luxury Human Performance Engineering',
+  defaultTitle: 'Roboflex — 1 of 10 Original NASA‑Spec Units Available',
   defaultDescription:
-    'From NASA-class engineering to private ownership. Discover the world’s most exclusive human performance system.',
+    'Own a piece of technological history: one of only 10 hand‑built, original NASA‑spec Roboflex units — precision aerospace engineering for elite performance.',
   siteUrl: 'https://roboflex.co',
   defaultImage: '/og-image.jpg'
 };
 
 // Global verification/meta codes
 const verification = {
-  google: '<meta name="google-site-verification" content="6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME" />', // Replace with actual
+  google: '6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME', // Replace with actual
   bing: '',
   yandex: ''
 };
 
 const seoPages = {
+  // Landing now inherits from defaultSEO
   landing: {
-    title: 'Roboflex — 1 of 10 Original NASA‑Spec Units Available',
-    description:
-      'Own a piece of technological history: one of only 10 hand-built, original NASA-spec Roboflex units — precision aerospace engineering for elite performance.',
-    image: '/og-image.jpg'
+    title: defaultSEO.defaultTitle,
+    description: defaultSEO.defaultDescription,
+    image: defaultSEO.defaultImage
   },
   application: {
     title: 'Apply for Private Access — Roboflex',
