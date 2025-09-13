@@ -1,17 +1,5 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import SEO from '../components/SEO';
-
-export default function LandingPage() {
-  return (
-    <>
-      <SEO pageKey="landing" />
-      <main>
-        <h1>Landing Page Placeholder</h1>
-        <p>This is the interim or Phase 1 landing page.</p>
-      </main>
-    </>
-  );
 
 export default function Home() {
   return (
@@ -109,6 +97,19 @@ export default function Home() {
       <footer className={styles.footer}>
         Roboflex™ — By Invitation Only. All Rights Reserved.
       </footer>
+    </>
+  );
+
+import SEO from '../components/SEO';
+
+export default function LandingPage() {
+  return (
+    <>
+      <SEO pageKey="landing" />
+      <main>
+        <h1>Landing Page Placeholder</h1>
+        <p>This is the interim or Phase 1 landing page.</p>
+      </main>
     </>
   );
 }
