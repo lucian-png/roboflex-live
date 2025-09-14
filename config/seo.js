@@ -8,7 +8,7 @@ const defaultSEO = {
 
 // Global verification/meta codes
 const verification = {
-  google: 'COaiXdVvnXajl0ZvH_P8IUXI2IbxO1uqAixFLLbNSiU',
+  google: '6rlph_r_EYo9t45AjHBQPgTG6SpoA62-2QZml7hogME',
   bing: '',
   yandex: ''
 };
