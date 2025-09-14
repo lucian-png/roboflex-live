@@ -3,7 +3,7 @@ const defaultSEO = {
   defaultDescription:
     'Own a piece of technological history: one of only 10 hand‑built, original NASA‑spec Roboflex units — precision aerospace engineering for elite performance.',
   siteUrl: 'https://roboflex.co',
-  defaultImage: '/og-image.jpg'
+  defaultImage: '/og-image.jpg' // OG image for landing page
 };
 
 // Global verification/meta codes
@@ -14,23 +14,23 @@ const verification = {
 };
 
 const seoPages = {
-  // Landing now inherits from defaultSEO
+  // Landing now inherits title/description from defaults, new OG image file
   landing: {
     title: defaultSEO.defaultTitle,
     description: defaultSEO.defaultDescription,
-    image: defaultSEO.defaultImage
+    image: '/og-image.jpg'
   },
   application: {
     title: 'Apply for Private Access — Roboflex',
     description:
       'Submit your application to gain exclusive access to the Roboflex performance platform.',
-    image: '/og-image.jpg'
+    image: '/og-image-apply.jpg'
   },
   technology: {
     title: 'Technology — Roboflex',
     description:
       'Explore the groundbreaking engineering behind the Roboflex biolocomotion system.',
-    image: '/og-image-tech.jpg'
+    image: '/og-image-tech-overview.jpg'
   },
   heritage: {
     title: 'Heritage — Roboflex',
