@@ -55,6 +55,8 @@ export default function SEO({
       <title>{seoTitle}</title>
       <meta name="title" content={seoTitle} />
       <meta name="description" content={seoDescription} />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <link rel="canonical" href={seoUrl} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
